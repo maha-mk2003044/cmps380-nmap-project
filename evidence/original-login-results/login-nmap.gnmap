@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Nov  9 12:05:27 2026 as: nmap -n -sS -sV --version-light -p 8080,8443 --script http-title,http-headers,ssl-cert -oA results/login-nmap 10.200.39.2
+Host: 10.200.39.2 ()	Status: Up
+Host: 10.200.39.2 ()	Ports: 8080/open/tcp//http//BaseHTTPServer 0.6 (Python 3.10.4)/, 8443/open/tcp//ssl|http//BaseHTTPServer 0.6 (Python 3.10.4)/
+# Nmap done at Mon Nov  9 12:05:40 2026 -- 1 IP address (1 host up) scanned in 13.98 seconds

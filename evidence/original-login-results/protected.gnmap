@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Nov  9 12:05:57 2026 as: nmap -n -sS -p 8080,8443 --reason -oA results/protected 10.200.39.2
+Host: 10.200.39.2 ()	Status: Up
+Host: 10.200.39.2 ()	Ports: 8080/closed/tcp//http-proxy///, 8443/open/tcp//https-alt///
+# Nmap done at Mon Nov  9 12:05:57 2026 -- 1 IP address (1 host up) scanned in 0.17 seconds

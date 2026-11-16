@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Nov  9 10:17:29 2026 as: nmap -n -sS -sV -O --osscan-limit -p 8000,8001 --script http-title,http-headers,http-ls -oA assessment 10.200.38.2
+Host: 10.200.38.2 ()	Status: Up
+Host: 10.200.38.2 ()	Ports: 8000/open/tcp//http//SimpleHTTPServer 0.6 (Python 3.10.4)/, 8001/closed/tcp//vcom-tunnel///	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Mon Nov  9 10:17:47 2026 -- 1 IP address (1 host up) scanned in 18.86 seconds

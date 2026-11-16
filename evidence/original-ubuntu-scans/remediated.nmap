@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Mon Nov  9 10:17:47 2026 as: nmap -n -sS -p 8000,8001 --reason -oA remediated 10.200.38.2
+Nmap scan report for 10.200.38.2
+Host is up, received arp-response (0.000025s latency).
+
+PORT     STATE  SERVICE     REASON
+8000/tcp closed http-alt    reset ttl 64
+8001/tcp closed vcom-tunnel reset ttl 64
+MAC Address: F6:8C:64:A6:42:5A (Unknown)
+
+# Nmap done at Mon Nov  9 10:17:48 2026 -- 1 IP address (1 host up) scanned in 0.14 seconds

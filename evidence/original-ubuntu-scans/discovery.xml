@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Nov  9 10:17:28 2026 as: nmap -n -sn -oA discovery 10.200.38.2 -->
+<nmaprun scanner="nmap" args="nmap -n -sn -oA discovery 10.200.38.2" start="1794208648" startstr="Mon Nov  9 10:17:28 2026" version="7.80" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.200.38.2" addrtype="ipv4"/>
+<address addr="F6:8C:64:A6:42:5A" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="69" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1794208648" timestr="Mon Nov  9 10:17:28 2026" elapsed="0.08" summary="Nmap done at Mon Nov  9 10:17:28 2026; 1 IP address (1 host up) scanned in 0.08 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

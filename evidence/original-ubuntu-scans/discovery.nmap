@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Mon Nov  9 10:17:28 2026 as: nmap -n -sn -oA discovery 10.200.38.2
+Nmap scan report for 10.200.38.2
+Host is up (0.000069s latency).
+MAC Address: F6:8C:64:A6:42:5A (Unknown)
+# Nmap done at Mon Nov  9 10:17:28 2026 -- 1 IP address (1 host up) scanned in 0.08 seconds

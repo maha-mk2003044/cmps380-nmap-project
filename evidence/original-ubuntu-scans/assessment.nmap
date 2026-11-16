@@ -1,0 +1,34 @@
+# Nmap 7.80 scan initiated Mon Nov  9 10:17:29 2026 as: nmap -n -sS -sV -O --osscan-limit -p 8000,8001 --script http-title,http-headers,http-ls -oA assessment 10.200.38.2
+Nmap scan report for 10.200.38.2
+Host is up (0.000068s latency).
+
+PORT     STATE  SERVICE     VERSION
+8000/tcp open   http        SimpleHTTPServer 0.6 (Python 3.10.4)
+| http-headers: 
+|   Server: SimpleHTTP/0.6 Python/3.10.4
+|   Date: Mon, 09 Nov 2026 07:17:47 GMT
+|   Content-type: text/html; charset=utf-8
+|   Content-Length: 342
+|   
+|_  (Request type: HEAD)
+|_http-server-header: SimpleHTTP/0.6 Python/3.10.4
+|_http-title: Directory listing for /
+8001/tcp closed vcom-tunnel
+MAC Address: F6:8C:64:A6:42:5A (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=11/9%OT=8000%CT=8001%CU=44625%PV=Y%DS=1%DC=D%G=Y%M=F68
+OS:C64%TM=6AF1739B%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10E%TI=Z%CI=Z
+OS:%II=I%TS=A)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11
+OS:NW7%O5=M5B4ST11NW7%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE
+OS:88%W6=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=4
+OS:0%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40
+OS:%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q
+OS:=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y
+OS:%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov  9 10:17:47 2026 -- 1 IP address (1 host up) scanned in 18.86 seconds

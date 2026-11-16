@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Nov  9 10:17:28 2026 as: nmap -n -sS -p 8000,8001 -&#45;reason -&#45;packet-trace -oA syn 10.200.38.2 -->
+<nmaprun scanner="nmap" args="nmap -n -sS -p 8000,8001 -&#45;reason -&#45;packet-trace -oA syn 10.200.38.2" start="1794208648" startstr="Mon Nov  9 10:17:28 2026" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="8000-8001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1794208648" endtime="1794208648"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.200.38.2" addrtype="ipv4"/>
+<address addr="F6:8C:64:A6:42:5A" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8001"><state state="closed" reason="reset" reason_ttl="64"/><service name="vcom-tunnel" method="table" conf="3"/></port>
+</ports>
+<times srtt="26" rttvar="2820" to="100000"/>
+</host>
+<runstats><finished time="1794208649" timestr="Mon Nov  9 10:17:29 2026" elapsed="0.14" summary="Nmap done at Mon Nov  9 10:17:29 2026; 1 IP address (1 host up) scanned in 0.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

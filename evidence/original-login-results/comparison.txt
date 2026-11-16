@@ -1,0 +1,6 @@
+HTTP capture bytes = 1512
+Dummy password visible in packet bytes = True
+http://10.200.39.2:8080/login DEMO LOGIN SUCCESS
+HTTPS capture bytes = 5121
+Dummy password visible in packet bytes = False
+https://10.200.39.2:8443/login DEMO LOGIN SUCCESS

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Nov  9 10:17:28 2026 as: nmap -n -sT -p 8000,8001 --reason -oA connect 10.200.38.2
+Host: 10.200.38.2 ()	Status: Up
+Host: 10.200.38.2 ()	Ports: 8000/open/tcp//http-alt///, 8001/closed/tcp//vcom-tunnel///
+# Nmap done at Mon Nov  9 10:17:28 2026 -- 1 IP address (1 host up) scanned in 0.10 seconds

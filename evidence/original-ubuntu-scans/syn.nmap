@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Mon Nov  9 10:17:28 2026 as: nmap -n -sS -p 8000,8001 --reason --packet-trace -oA syn 10.200.38.2
+SENT (0.0482s) ARP who-has 10.200.38.2 tell 10.200.38.1
+RCVD (0.0482s) ARP reply 10.200.38.2 is-at F6:8C:64:A6:42:5A
+SENT (0.0959s) TCP 10.200.38.1:43903 > 10.200.38.2:8000 S ttl=52 id=60622 iplen=44  seq=3652066262 win=1024 <mss 1460>
+SENT (0.0960s) TCP 10.200.38.1:43903 > 10.200.38.2:8001 S ttl=44 id=8012 iplen=44  seq=3652066262 win=1024 <mss 1460>
+RCVD (0.0959s) TCP 10.200.38.2:8000 > 10.200.38.1:43903 SA ttl=64 id=0 iplen=44  seq=4218913230 win=64240 <mss 1460>
+RCVD (0.0960s) TCP 10.200.38.2:8001 > 10.200.38.1:43903 RA ttl=64 id=0 iplen=40  seq=0 win=0 
+Nmap scan report for 10.200.38.2
+Host is up, received arp-response (0.000026s latency).
+
+PORT     STATE  SERVICE     REASON
+8000/tcp open   http-alt    syn-ack ttl 64
+8001/tcp closed vcom-tunnel reset ttl 64
+MAC Address: F6:8C:64:A6:42:5A (Unknown)
+
+# Nmap done at Mon Nov  9 10:17:29 2026 -- 1 IP address (1 host up) scanned in 0.14 seconds

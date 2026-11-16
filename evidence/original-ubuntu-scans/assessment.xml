@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Nov  9 10:17:29 2026 as: nmap -n -sS -sV -O -&#45;osscan-limit -p 8000,8001 -&#45;script http-title,http-headers,http-ls -oA assessment 10.200.38.2 -->
+<nmaprun scanner="nmap" args="nmap -n -sS -sV -O -&#45;osscan-limit -p 8000,8001 -&#45;script http-title,http-headers,http-ls -oA assessment 10.200.38.2" start="1794208649" startstr="Mon Nov  9 10:17:29 2026" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="8000-8001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1794208650" endtime="1794208667"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.200.38.2" addrtype="ipv4"/>
+<address addr="F6:8C:64:A6:42:5A" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="SimpleHTTPServer" version="0.6" extrainfo="Python 3.10.4" method="probed" conf="10"><cpe>cpe:/a:python:simplehttpserver:0.6</cpe></service><script id="http-headers" output="&#xa;  Server: SimpleHTTP/0.6 Python/3.10.4&#xa;  Date: Mon, 09 Nov 2026 07:17:47 GMT&#xa;  Content-type: text/html; charset=utf-8&#xa;  Content-Length: 342&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-server-header" output="SimpleHTTP/0.6 Python/3.10.4"><elem>SimpleHTTP/0.6 Python/3.10.4</elem>
+</script><script id="http-title" output="Directory listing for /"><elem key="title">Directory listing for /</elem>
+</script></port>
+<port protocol="tcp" portid="8001"><state state="closed" reason="reset" reason_ttl="64"/><service name="vcom-tunnel" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="8000"/>
+<portused state="closed" proto="tcp" portid="8001"/>
+<portused state="closed" proto="udp" portid="44625"/>
+<osmatch name="Linux 2.6.32" accuracy="96" line="55173">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.10" accuracy="96" line="56381">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.4 - 3.10" accuracy="95" line="65366">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62708">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64455">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="94" line="61606">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="94"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="94" line="56153">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.5" accuracy="94" line="56585">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.13" accuracy="93" line="56411">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=11/9%OT=8000%CT=8001%CU=44625%PV=Y%DS=1%DC=D%G=Y%M=F68&#xa;OS:C64%TM=6AF1739B%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10E%TI=Z%CI=Z&#xa;OS:%II=I%TS=A)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11&#xa;OS:NW7%O5=M5B4ST11NW7%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE&#xa;OS:88%W6=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=4&#xa;OS:0%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O&#xa;OS:=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40&#xa;OS:%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q&#xa;OS:=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y&#xa;OS:%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2484772" lastboot="Sun Oct 11 16:04:55 2026"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="4B873C68,C7024DC4,FBF8CCEF,34EEAF7A,B1AAE849,FB71A622"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="941A9C2B,941A9C90,941A9CF5,941A9D5A,941A9DBE,941A9E23"/>
+<times srtt="68" rttvar="25" to="100000"/>
+</host>
+<runstats><finished time="1794208667" timestr="Mon Nov  9 10:17:47 2026" elapsed="18.86" summary="Nmap done at Mon Nov  9 10:17:47 2026; 1 IP address (1 host up) scanned in 18.86 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
